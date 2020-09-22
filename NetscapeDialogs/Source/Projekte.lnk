@@ -1,0 +1,38 @@
+VERSION 5.00
+Object = "*\ANetscapeDialogs.vbp"
+Begin VB.Form Test 
+   Caption         =   "Form1"
+   ClientHeight    =   3195
+   ClientLeft      =   60
+   ClientTop       =   345
+   ClientWidth     =   4680
+   LinkTopic       =   "Form1"
+   ScaleHeight     =   3195
+   ScaleWidth      =   4680
+   StartUpPosition =   3  'Windows-Standard
+   Begin NetscapeDialogs.NetscapeMsgBox NetscapeMsgBox1 
+      Left            =   240
+      Top             =   240
+      _ExtentX        =   900
+      _ExtentY        =   900
+   End
+   Begin VB.CommandButton Command1 
+      Caption         =   "Command1"
+      Height          =   1215
+      Left            =   600
+      TabIndex        =   0
+      Top             =   1320
+      Width           =   3135
+   End
+End
+Attribute VB_Name = "Test"
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = False
+Attribute VB_PredeclaredId = True
+Attribute VB_Exposed = False
+
+
+Private Sub Command1_Click()
+NetscapeMsgBox1.MessageBox "Welcome to Netscape Dialogs. The real Netscape Messagebox now for YOU !!!", Error, ncNormalOK, "Welcome"
+End Sub
+
